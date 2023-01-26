@@ -1,12 +1,13 @@
-import "../styles/globals.css";
-import type { AppProps } from "next/app";
-import Head from "next/head";
-
-import "tailwindcss/tailwind.css";
+import '../styles/globals.css';
+import 'tailwindcss/tailwind.css';
+import type { AppProps } from 'next/app';
+import Head from 'next/head';
+import GlobalStyles from '../styles/GlobalStyle';
 
 const _App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
+      <GlobalStyles />
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Create Next App</title>
