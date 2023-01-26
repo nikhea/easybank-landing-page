@@ -3,6 +3,7 @@ import 'tailwindcss/tailwind.css';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import GlobalStyles from '../styles/GlobalStyle';
+import React from 'react';
 
 const _App = ({ Component, pageProps }: AppProps) => {
   return (
