@@ -5,5 +5,5 @@ import Link from 'next/link';
 export const Container = tw.div`
 w-[80%]
 m-auto
-bg-regal-blue
+// bg-regal-blue
 `;
