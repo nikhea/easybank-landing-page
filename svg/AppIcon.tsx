@@ -24,5 +24,5 @@ const AppIcon = () => {
     </svg>
   );
 };
-
+// width="139" height="20"
 export default AppIcon;
