@@ -11,6 +11,7 @@ body {
     /* color:#9698a6; */
     position: reative;
     @apply text-grayish-blue;
+    overflow-x: hidden;
 }
 
 a {

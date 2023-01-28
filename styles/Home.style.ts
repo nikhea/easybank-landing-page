@@ -14,10 +14,12 @@ export const Grid = tw.div`
  md:grid-cols-2
   gap-10
   w-full
+  my-10
 `;
 export const GridItems = tw.div`
 w-full
 h-full
 flex
 flex-col
+// my-10
 `;

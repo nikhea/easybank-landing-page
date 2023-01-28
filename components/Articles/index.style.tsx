@@ -15,8 +15,9 @@ h-full
 
 `;
 export const ArticleTitle = tw.h1`
+font-bold
 text-2xl
-md:text-lg
+md:text-xl
 hover:text-lime-green
 cursor-pointer
 

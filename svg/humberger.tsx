@@ -1,5 +1,5 @@
 import React from 'react';
-import Svg, { IconProps } from '../layout/Header.style';
+import Svg, { IconProps } from './SVG';
 const humberger = (props: IconProps) => {
   const { className } = props;
   return (

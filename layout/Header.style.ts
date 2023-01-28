@@ -44,7 +44,7 @@ rounded-full
 ease-in-out
 duration-100
 relative
-z-1
+z-10
 bg-gradient-to-r
 from-lime-green
 to-bright-cyan
