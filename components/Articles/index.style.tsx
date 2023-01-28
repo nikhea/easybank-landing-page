@@ -17,7 +17,7 @@ h-full
 export const ArticleTitle = tw.h1`
 text-2xl
 md:text-lg
-hover:text-amber-300
+hover:text-lime-green
 cursor-pointer
 
 `;
