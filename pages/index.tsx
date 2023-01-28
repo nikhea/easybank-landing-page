@@ -1,11 +1,13 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
-// import React from 'react';
-
-// import { Container } from '../styles/Home.style';
+import HeroSection from '../components/HeroSection';
 
 const HomePage: NextPage = () => {
-  return <>jskj</>;
+  return (
+    <>
+      <HeroSection />
+    </>
+  );
 };
 
 export default HomePage;

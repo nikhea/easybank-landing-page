@@ -3,7 +3,7 @@ import tw from 'twin.macro';
 import Link from 'next/link';
 
 export const Container = tw.div`
-w-[80%]
+w-[90%]
 m-auto
 // bg-regal-blue
 `;
