@@ -10,7 +10,7 @@ export interface IArticles {
   title: string;
   description: string;
 }
-export const articles: IArticles[] = [
+export const articlesDB: IArticles[] = [
   {
     image: ImageCurrency,
     author: `By Claire Robinson`,
