@@ -1,13 +1,7 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
 import Image from 'next/image';
-import Articles from './index';
-// export const GridItems = tw.div`
-// w-full
-// h-full
-// flex
-// flex-col
-// `;
+
 export const MainTitle = tw.h1`
   text-3xl
   text-center
