@@ -21,7 +21,6 @@ const Header = () => {
   function toggleMenu() {
     setIsMenuOpen(!isMenuOpen);
   }
-  console.log(isMenuOpen);
 
   const navList = ['home', 'about', 'contact', 'blog', 'careers'];
   return (

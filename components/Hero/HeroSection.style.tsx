@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import Link from 'next/link';
 import Image from 'next/image';
-import IntroMobile from '../svg/images/bg-intro-mobile.svg';
-import IntroDesktop from '../svg/images/bg-intro-desktop.svg';
 
 // export const HeroImage = styled()
 export const HeroIntro = tw.div`
@@ -13,7 +10,7 @@ export const HeroIntro = tw.div`
     md:flex-row
     bg-very-light-gray
     relative
-    z-1
+    z-10
 `;
 export const HeroTextContainer = tw.div`
 // py-[8rem]

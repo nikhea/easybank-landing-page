@@ -1,6 +1,6 @@
 import React from 'react';
-import ImageMockups from '../svg/images/image-mockups.png';
-import { Container } from '../styles/Home.style';
+import ImageMockups from '../../svg/images/image-mockups.png';
+import { Container } from '../../styles/Home.style';
 import {
   HeroImageContainer,
   HeroImageMobile,
@@ -9,8 +9,8 @@ import {
   HeroTitle,
   SubText,
 } from './HeroSection.style';
-import Button from './Button';
-import IntroMobile from '../svg/images/bg-intro-mobile.svg';
+import Button from '../Button';
+import IntroMobile from '../../svg/images/bg-intro-mobile.svg';
 
 const HeroSection = () => {
   return (
@@ -38,3 +38,5 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
+// http://192.168.8.1/html/home.html

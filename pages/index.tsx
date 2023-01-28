@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
-import HeroSection from '../components/HeroSection';
+import HeroSection from '../components/Hero/HeroSection';
 
 const HomePage: NextPage = () => {
   return (
