@@ -19,14 +19,16 @@ const features = () => {
     </GridItems>
   ));
   return (
-    <Container>
-      <MainTitle> Why choose Easybank?</MainTitle>
-      <MainDescription>
-        We leverage Open Banking to turn your bank account into your financial
-        hub. Control your finances like never before.
-      </MainDescription>
-      <Grid>{featuresList}</Grid>
-    </Container>
+    <div>
+      <Container>
+        <MainTitle> Why choose Easybank?</MainTitle>
+        <MainDescription>
+          We leverage Open Banking to turn your bank account into your financial
+          hub. Control your finances like never before.
+        </MainDescription>
+        <Grid>{featuresList}</Grid>
+      </Container>
+    </div>
   );
 };
 
