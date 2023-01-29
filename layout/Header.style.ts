@@ -54,6 +54,28 @@ hover:to-lime-green
 
 
 `;
+export const MainButton = tw.button`
+capitalize
+py-1
+// hidden
+md:flex
+text-white
+py-3
+px-5
+rounded-full
+ease-in-out
+duration-100
+relative
+z-10
+bg-gradient-to-r
+from-lime-green
+to-bright-cyan
+hover:from-bright-cyan
+hover:to-lime-green
+// bg-linear-gradient(to right, $lime-green, $bright-cyan);
+
+
+`;
 export const MobileMenu = tw.nav`
 md:hidden
 bg-white shadow-2xl

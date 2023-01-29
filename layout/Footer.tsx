@@ -1,9 +1,55 @@
-import React from 'react'
-
+import React from 'react';
+import AppIcon from './AppIconLight';
+import { Container } from '../styles/Home.style';
+import {
+  FooterBackground,
+  ItemContainer,
+  IconContainer,
+  Content,
+  LinkGrid,
+  LinkGridItems,
+  RightReserved,
+  RightReservedText,
+} from './Footer.style';
+import FaceBookIcon from '../svg/SocialSVG/FaceBook';
+import Button from '../components/Button';
 const Footer = () => {
+  const footerLinks = [
+    'About Us',
+    'Contact',
+    'Blog',
+    'Careers',
+    'Support',
+    'Privacy Policy',
+  ];
+  const LinksList = footerLinks.map((links, index: number) => (
+    <LinkGridItems key={index}>{links}</LinkGridItems>
+  ));
   return (
-    <div>Footer</div>
-  )
-}
+    <FooterBackground>
+      <Container>
+        <ItemContainer>
+          <Content>
+            <AppIcon />
+            <IconContainer>
+              <FaceBookIcon />
+              <FaceBookIcon />
+              <FaceBookIcon />
+              <FaceBookIcon />
+              <FaceBookIcon />
+            </IconContainer>
+          </Content>
+          <LinkGrid>{LinksList}</LinkGrid>
+          <RightReserved>
+            <Button />
+            <RightReservedText>
+              © Easybank. All Rights Reserved
+            </RightReservedText>
+          </RightReserved>
+        </ItemContainer>
+      </Container>
+    </FooterBackground>
+  );
+};
 
-export default Footer
+export default Footer;

@@ -19,7 +19,7 @@ const features = () => {
     </GridItems>
   ));
   return (
-    <div>
+    <div className="py-20 bg-light-grayish-blue">
       <Container>
         <MainTitle> Why choose Easybank?</MainTitle>
         <MainDescription>

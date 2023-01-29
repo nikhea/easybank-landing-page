@@ -1,7 +1,7 @@
 import React from 'react';
-import { NavButton } from '../layout/Header.style';
+import { MainButton } from '../layout/Header.style';
 const Button = () => {
-  return <NavButton> Request Invite</NavButton>;
+  return <MainButton> Request Invite</MainButton>;
 };
 
 export default Button;

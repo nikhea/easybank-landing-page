@@ -13,7 +13,7 @@ export const MainDescription = tw.p`
   lg:w-[50%]
   text-center
 //   md:text-6xl
-//   md:text-left
+  md:text-left
 `;
 export const Title = tw.h1`
 font-light

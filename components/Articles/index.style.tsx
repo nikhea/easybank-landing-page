@@ -7,6 +7,7 @@ export const MainTitle = tw.h1`
   text-center
   md:text-6xl
   md:text-left
+  my-20
 `;
 
 export const ImageContent = tw.div`

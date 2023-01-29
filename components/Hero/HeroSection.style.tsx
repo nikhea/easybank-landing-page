@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
 import Image from 'next/image';
+import IntroMobile from '../../svg/images/bg-intro-mobile.svg';
 
 // export const HeroImage = styled()
 export const HeroIntro = tw.div`
@@ -8,9 +9,7 @@ export const HeroIntro = tw.div`
     flex-col-reverse
     items-center
     md:flex-row
-    bg-very-light-gray
-    relative
-    z-10
+ 
 `;
 export const HeroTextContainer = tw.div`
 // py-[8rem]
@@ -29,20 +28,22 @@ md:text-[3.2rem]
 export const SubText = tw.p`
 mb-[3rem]
 `;
-export const HeroImageContainer = tw.div`
- relative
+export const HeroImageContainer = styled.div`
+  /* relative
  block
  w-full
  h-full
+ bg-[url('../svg/images/bg-intro-mobile.svg')] */
 `;
 
 export const HeroImageMobile = styled(Image)(
-  tw`
-//    absolute
-//   right-0
-//   top-[-6rem]
+  tw` md:hidden
+  //  absolute
+  right-0
+  // top-[-6rem]
   `
 );
+// bg-[url('/img/hero-pattern.svg')]
 // bg-[url('../svg/images/bg-intro-mobile.svg')]
 // padding-bottom: 8rem;
 // background-image: url(../images/bg-intro-desktop.svg);
