@@ -12,6 +12,10 @@ import {
   RightReservedText,
 } from './Footer.style';
 import FaceBookIcon from '../svg/SocialSVG/FaceBook';
+import InstargramIcon from '../svg/SocialSVG/Instargram';
+import TiwtterIcon from '../svg/SocialSVG/Tiwtter';
+import YoutubeIcon from '../svg/SocialSVG/Youtube';
+import PintrestIcon from '../svg/SocialSVG/Pintrest';
 import Button from '../components/Button';
 const Footer = () => {
   const footerLinks = [
@@ -33,10 +37,10 @@ const Footer = () => {
             <AppIcon />
             <IconContainer>
               <FaceBookIcon />
-              <FaceBookIcon />
-              <FaceBookIcon />
-              <FaceBookIcon />
-              <FaceBookIcon />
+              <YoutubeIcon />
+              <TiwtterIcon />
+              <PintrestIcon />
+              <InstargramIcon />
             </IconContainer>
           </Content>
           <LinkGrid>{LinksList}</LinkGrid>
