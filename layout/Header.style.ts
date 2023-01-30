@@ -52,7 +52,7 @@ export const DeskTopListItem = styled.li`
   &:hover {
     color: #000;
     /* border: 0px ; */
-    border-bottom: 4px solid;
+    border-bottom: 1px solid;
     border-image-slice: 1;
     /* border-width: 5px; */
     border-image-source: linear-gradient(to right, #31d35c, #2bb7da);
