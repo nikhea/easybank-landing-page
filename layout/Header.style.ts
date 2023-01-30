@@ -25,12 +25,38 @@ gap-5
 items-center
 justify-center
 
+
 `;
-export const DeskTopListItem = tw.li`
-capitalize
-text-xl
+// export const DeskTopListItem = tw.li`
+// capitalize
+// text-xl
+// hover:border-b-4
+// pb-3
+// // rounded-full
+// ease-in-out
+// duration-100
 
-
+// // border-gradient-to-r
+// from-lime-green
+// to-bright-cyan
+// `;
+export const DeskTopListItem = styled.li`
+  padding-bottom: 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  text-transform: capitalize;
+  -webkit-transition-duration: 100ms;
+  transition-duration: 100ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    color: #000;
+    /* border: 0px ; */
+    border-bottom: 4px solid;
+    border-image-slice: 1;
+    /* border-width: 5px; */
+    border-image-source: linear-gradient(to right, #31d35c, #2bb7da);
+  }
 `;
 export const NavButton = tw.button`
 capitalize
