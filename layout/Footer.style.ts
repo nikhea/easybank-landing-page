@@ -61,6 +61,9 @@ gap-5
 export const RightReserved = tw.div`
 text-center
  flex-col
+ md:flex
+//  lg:block
+ place-items-center
 //  justify-between
 justify-center
 h-full

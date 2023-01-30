@@ -14,6 +14,7 @@ import {
   MobileListItem,
   HumbergerContainer,
   NavButton,
+  Overlay,
 } from './Header.style';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,15 +43,18 @@ const Header = () => {
         </HumbergerContainer>
       </ItemContainer>
       {isMenuOpen ? (
-        <MobileMenu>
-          <MobileList>
-            {navList.map((item, index) => (
-              <MobileListItem key={index}>
-                <Link href={`/`}>{item}</Link>
-              </MobileListItem>
-            ))}
-          </MobileList>
-        </MobileMenu>
+        <>
+          <MobileMenu>
+            <MobileList>
+              {navList.map((item, index) => (
+                <MobileListItem key={index}>
+                  <Link href={`/`}>{item}</Link>
+                </MobileListItem>
+              ))}
+            </MobileList>
+          </MobileMenu>
+          <Overlay />
+        </>
       ) : null}
     </Container>
   );

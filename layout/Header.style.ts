@@ -117,9 +117,34 @@ ease-in-out
 duration-100
 absolute
 mt-5
+overflow-y-hidden 
 z-[9999999999999999999]
 // transform
 // translate(50%, 50%)
+`;
+export const Overlay = styled.div`
+  /* display: block; */
+  width: 100%;
+  /* height: 901.8%; */
+  background: linear-gradient(
+    to bottom,
+    rgba(hsl(233, 26%, 24%), 0.8),
+    rgba(hsl(220, 16%, 96%), 0.8)
+  );
+  background: blue;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  opacity: 0.2;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+  z-index: 99;
+  @media (min-width: 768px) {
+    display: none;
+  }
 `;
 export const MobileList = tw.ul`
 flex
@@ -150,7 +175,8 @@ export const HumbergerCloseMenu = styled(HumbergerClose)(
   tw`
     md:hidden
     w-[18px] h-[19px]
-    // w-[24px] h-[11px]
+    relative
+    z-[999999999999]
       `
 );
 export default styled.svg.attrs({
