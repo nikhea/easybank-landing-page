@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
 import Image from 'next/image';
-import IntroMobile from '../../svg/images/bg-intro-mobile.svg';
+import IntroMobile from '../../svg/images/bg-intro-desktop.svg';
 
 // export const HeroImage = styled()
 export const HeroIntro = tw.div`
@@ -9,6 +9,7 @@ export const HeroIntro = tw.div`
     flex-col-reverse
     items-center
     md:flex-row
+    overflow-hidden
  
 `;
 export const HeroTextContainer = tw.div`
@@ -29,16 +30,37 @@ export const SubText = tw.p`
 mb-[3rem]
 `;
 export const HeroImageContainer = styled.div`
-  /* relative
- block
- w-full
- h-full
- bg-[url('../svg/images/bg-intro-mobile.svg')] */
+  position: relative;
+  display: block;
+  width: 100%;
+  background-color: red;
+  /* background-image: url(${IntroMobile}); */
+  background-image: url(../svg/images/bg-intro-desktop.svg);
+  background-position: 3rem -15rem;
+  background-repeat: no-repeat;
+  height: 100vh;
+  left: 0;
+  margin: 0;
+  /* background-size: cover;
+  height: 100vh;
+  width: 100%;  */
 `;
 
+export const HeroImageDesktop = styled(Image)(
+  tw` hidden
+  md:flex
+   absolute
+  right-10
+  left-0
+  overflow-hidden
+  top-[-6rem]
+  left-[17rem]
+  w-[80%]
+  `
+);
 export const HeroImageMobile = styled(Image)(
   tw` md:hidden
-  //  absolute
+   absolute
   right-0
   // top-[-6rem]
   `

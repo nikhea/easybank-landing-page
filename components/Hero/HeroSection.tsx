@@ -3,6 +3,7 @@ import ImageMockups from '../../svg/images/image-mockups.png';
 import { Container } from '../../styles/Home.style';
 import {
   HeroImageContainer,
+  HeroImageDesktop,
   HeroImageMobile,
   HeroIntro,
   HeroTextContainer,
@@ -15,22 +16,23 @@ import IntroMobile from '../../svg/images/bg-intro-mobile.svg';
 const HeroSection = () => {
   return (
     <div className="relative z-10 bg-very-light-gray">
-      <Container>
-        <HeroIntro>
-          <HeroTextContainer>
-            <HeroTitle> Next generation digital banking</HeroTitle>
-            <SubText>
-              Take your financial life online. Your Easybank account will be a
-              one-stop-shop for spending, saving, budgeting, investing, and much
-              more.
-            </SubText>
-            <Button />
-          </HeroTextContainer>
-          <HeroImageContainer>
-            <HeroImageMobile alt="ImageMockups" src={ImageMockups} />
-          </HeroImageContainer>
-        </HeroIntro>
-      </Container>
+      {/* <Container> */}
+      <HeroIntro>
+        <HeroTextContainer>
+          <HeroTitle> Next generation digital banking</HeroTitle>
+          <SubText>
+            Take your financial life online. Your Easybank account will be a
+            one-stop-shop for spending, saving, budgeting, investing, and much
+            more.
+          </SubText>
+          <Button />
+        </HeroTextContainer>
+        <HeroImageContainer>
+          <HeroImageDesktop alt="ImageMockups" src={ImageMockups} />
+          <HeroImageMobile alt="ImageMockups" src={ImageMockups} />
+        </HeroImageContainer>
+      </HeroIntro>
+      {/* </Container> */}
     </div>
   );
 };

@@ -103,6 +103,11 @@ hover:to-lime-green
 
 `;
 export const MobileMenu = tw.nav`
+flex
+justify-center
+items-center
+h-[50%]
+w-[90%]
 md:hidden
 bg-white shadow-2xl
 rounded-[24px]
@@ -110,7 +115,9 @@ py-1
 transition
 ease-in-out
 duration-100
-// absolute
+absolute
+mt-5
+z-[9999999999999999999]
 // transform
 // translate(50%, 50%)
 `;
