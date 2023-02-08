@@ -9,7 +9,7 @@ export const HeroIntro = tw.div`
     flex-col-reverse
     items-center
     md:flex-row
-    overflow-hidden
+    // overflow-hidden
  
 `;
 export const HeroTextContainer = tw.div`
@@ -23,6 +23,8 @@ md:text-left
 `;
 
 export const HeroTitle = tw.h1`
+md:mt-[4rem]
+lg:mt-[0]
 md:text-[3.2rem]
 `;
 
@@ -33,29 +35,37 @@ export const HeroImageContainer = styled.div`
   position: relative;
   display: block;
   width: 100%;
-  background-color: red;
-  /* background-image: url(${IntroMobile}); */
-  background-image: url(../svg/images/bg-intro-desktop.svg);
-  background-position: 3rem -15rem;
+  background-image: url('/images/bg-intro-desktop.svg');
+  background-position: 8rem -8rem;
   background-repeat: no-repeat;
   height: 100vh;
   left: 0;
+  left: 5rem;
   margin: 0;
-  /* background-size: cover;
+  background-size: cover;
+  /* overflow: ; */
   height: 100vh;
-  width: 100%;  */
+  width: 100%;
+  @media (max-width: 768px) {
+    background-image: url('/images/bg-intro-mobile.svg');
+    background-position: 0rem 0rem;
+    left: 0;
+  }
 `;
+/* background-position: 3rem -15rem; */
 
 export const HeroImageDesktop = styled(Image)(
-  tw` hidden
+  tw` 
+  hidden
   md:flex
    absolute
   right-10
   left-0
   overflow-hidden
-  top-[-6rem]
-  left-[17rem]
-  w-[80%]
+  top-[-2rem]
+  left-[10rem]
+  w-[90%]
+  // w-full
   `
 );
 export const HeroImageMobile = styled(Image)(

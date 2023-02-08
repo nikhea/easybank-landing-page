@@ -16,3 +16,12 @@ h3 {
   @apply text-dark-blue;
 }
 /* @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&family=Roboto:ital,wght@0,100;0,500;1,100;1,300;1,400;1,500;1,700&display=swap'); */
+
+.banner {
+  background-image: url('/images/bg-boost-desktop.svg') !important;
+  background-color: hsl(257, 27%, 26%) !important;
+  min-height: 50vh !important;
+  background-size: cover;
+  background-position: center;
+  z-index: 9999999999999999 !important;
+}
