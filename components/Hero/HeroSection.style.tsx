@@ -19,7 +19,7 @@ w-full
 md:w-[66%]
 text-center
 md:text-left
-
+// djdj
 `;
 
 export const HeroTitle = tw.h1`
